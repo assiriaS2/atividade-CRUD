@@ -2,7 +2,7 @@
 <?php require("header.php") ?>
 <body>
 
-<a href="generico/genericoList.php"></a>
+<a href="genericoList.php">generico</a>
 
 </body>
 </html>

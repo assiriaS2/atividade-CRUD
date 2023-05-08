@@ -29,7 +29,7 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="generico/genericoList.php">generico</a>
+                <a href="genericoList.php">generico</a>
             </li>
         </ul>
     </nav>

@@ -2,7 +2,7 @@
 require('./conf.php');
 
 $email = $_POST['e-mail'];
-$name - $_POST['name]'];
+$name = $_POST['name'];
 $surname = $_POST['surname'];
 
 $genericoFile = fopen(GENERICO_DATA,'r');

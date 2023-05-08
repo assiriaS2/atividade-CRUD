@@ -3,44 +3,14 @@
 
 <h1 style="text-align:center;">generico</h1>
 
-<?php $hadle = fopen(GENERICO_DATA,'r')?>
-
-<table>
-    <tr>
-        <th>e-mail</th>
-        <th>name</th>
-        <th>surname</th>
-    </tr>
-    <?php while(($row = fgetcsv($handle)) !== false):?>
-        <tr>
-            <td><?=$row[0]?></td>
-            <td><?=$row[1]?></td>
-            <td><?=$row[2]?></td>
-        </tr>
-        <?php endwhile?>
-</table>
-
-<?php if (isset($_GET['err'])):?>
-    <div><?=$_GET['err']?></div>
-    <?php endif ?>
-
-    <form action="genericoAdd.php" method="POST">
-        <input type="email" name="e-mail" placeholder="E-mail">
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="surname" placeholder="Surname">
-        <button>Add</button>
-    </form>
-    </td>
-    </tr>
-
     <?php if(isset($_GET['err'])):?>
-        <div><=?$_GET['err']?></div>
+        <div><?=$_GET['err']?></div>
         <?php endif ?>
 
         <form action="genericoAdd.php" method="POST">
             <input type="email" name="e-mail" placeholder="E-mail">
-            <input type="name" name="name" placeholder="Name">
-            <input type="surname" name="surname" placeholder="Surname">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="surname" placeholder="Surname">
             <button>Add</button>
         </form>
 
@@ -54,15 +24,14 @@
                 <th>name</th>
                 <th>surname</th>
             </tr>
-            <?php while(($row = fgetcsv($hadle)) !== false): ?>
+            <?php while(($row = fgetcsv($handle)) !== false): ?>
                 <tr>
                     <td><?=$row[0]?></td>
                     <td><?=$row[1]?></td>
                     <td><?=$row[2]?></td>
                     <td>
                     <input type="checkbox" name="e-mails[]" value="<?=$row[0] ?>">
-
-                    <a href="genericoPage.php?<?=$row[0]?>">ir</a>
+                    <a href="./genericoPage.php?email=<?=$row[0]?>">edit</a>
                     </td>
                 </tr>
                 <?php endwhile?>
@@ -76,6 +45,3 @@
         </table>
     </form>
     <br><br>
-
-    <?php if(isset($_GET['err'])):?>
-        <div style="color:red;"></div>
