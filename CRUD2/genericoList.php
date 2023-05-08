@@ -1,6 +1,12 @@
+<?php require("verificacao.php") ?>
 <?php require('./conf.php')?>
 <?php require('./header.php')?>
 
+<style>
+    th,td{
+        width: 130px;
+    }
+</style>
 <h1 style="text-align:center;">generico</h1>
 
     <?php if(isset($_GET['err'])):?>

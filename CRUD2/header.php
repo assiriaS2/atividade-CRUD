@@ -8,7 +8,7 @@
     <style>
     nav ul{
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-home;
         gap: 0.5em;
     }
     nav ul li{
@@ -26,7 +26,7 @@
     <nav>
         <ul>
             <li>
-                <a href="/">Home</a>
+                <a href="/CRUD2/">Home</a>
             </li>
             <li>
                 <a href="genericoList.php">generico</a>

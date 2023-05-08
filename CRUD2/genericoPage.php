@@ -1,3 +1,4 @@
+<?php require("verificacao.php") ?>
 <?php
 require('./conf.php');
 

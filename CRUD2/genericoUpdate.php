@@ -1,5 +1,7 @@
+<?php require("verificacao.php") ?>
 <?php
 require("./conf.php");
+
 
 $email = $_POST['email'];
 $name = $_POST['name'];
