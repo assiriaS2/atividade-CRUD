@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="login.php" method="POST">
-        <input type="email" name="E-mail" placeholder="E-mail">
+        <input type="usuario" name="usuario" placeholder="Usuário">
         <input type="password" name="senha" placeholder="Senha">
         <button>Entrar</button>
 

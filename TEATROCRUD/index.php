@@ -4,7 +4,7 @@
 
 <body>
 
-<button onclick="window.location.href='sair.php'">Sair da conta</button>
+<button onclick="window.location.href='sair.php'">Sair da página</button>
 
 </body>
 </html>

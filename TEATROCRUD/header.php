@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeBatle</title>
+    <title>Teatro</title>
     <style>
     nav ul{
         display: flex;
@@ -26,10 +26,10 @@
     <nav>
         <ul>
             <li>
-                <a href="/CRUD2/">Home</a>
+                <a href="/TEATROCRUD/">Início</a>
             </li>
             <li>
-                <a href="genericoList.php">generico</a>
+                <a href="teatroList.php">Teatro</a>
             </li>
         </ul>
     </nav>
