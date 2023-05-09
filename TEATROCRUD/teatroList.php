@@ -46,6 +46,7 @@
                 <?php endwhile?>
                 <tr>
                     <td colspan="9"></td>
+                    
                     <td>
                         <button>Remove</button>
                         </td>
